@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Borderless Buying House | India Buying Office, Tiruppur</title>
+<meta name="description" content="Borderless Buying House — India Buying Office in Tiruppur. Reliable garment sourcing, supplier verification, quality control & production management for international buyers.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+:root{--jungle-green:#004d40;--gold:#c5a059;--dark-jungle:#002e26}
+.bg-jungle{background-color:var(--jungle-green)}.bg-dark-jungle{background-color:var(--dark-jungle)}
+.text-gold{color:var(--gold)}.bg-gold{background-color:var(--gold)}.border-gold{border-color:var(--gold)}
+html{scroll-behavior:smooth}
+body{font-family:ui-sans-serif,system-ui,'Segoe UI',Roboto,Arial,sans-serif}
+/* HERO */
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.08);animation:heroZoom 18s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1.2)}}
+.hero-overlay{background:linear-gradient(rgba(0,46,38,.88),rgba(0,77,64,.72))}
+/* motion system (framer-like springs) */
+.motion{opacity:0;transform:translateY(36px) scale(.985);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.motion.in{opacity:1;transform:none}
+.motion-d1{transition-delay:.08s}.motion-d2{transition-delay:.16s}.motion-d3{transition-delay:.24s}.motion-d4{transition-delay:.32s}.motion-d5{transition-delay:.4s}
+.float-slow{animation:floatY 6s ease-in-out infinite}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.pill{transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s,background .35s}
+.pill:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 12px 30px rgba(197,160,89,.35);background:var(--gold);color:#002e26!important;border-color:var(--gold)}
+.service-card{transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s,border-color .45s}
+.service-card:hover{transform:translateY(-12px) scale(1.02);box-shadow:0 24px 50px rgba(0,46,38,.18);border-bottom:4px solid var(--gold)}
+.feature-img{transition:transform .7s cubic-bezier(.22,1,.36,1),box-shadow .5s}
+.feature-img:hover{transform:scale(1.03) translateY(-6px);box-shadow:0 26px 60px rgba(0,0,0,.45)}
+/* slideshow */
+.slideshow{position:absolute;inset:0;overflow:hidden}
+.slideshow img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.4s ease,transform 6s ease}
+.slideshow img.active{opacity:.28;transform:scale(1.14)}
+.slide-dots span{width:9px;height:9px;border-radius:99px;background:rgba(255,255,255,.35);transition:all .4s;display:inline-block}
+.slide-dots span.on{width:28px;background:var(--gold)}
+/* marquee */
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.animate-marquee{animation:marquee 28s linear infinite}
+.nav-link.active{color:var(--gold)}
+#bbh-nav.scrolled{box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.mobile-menu.open{max-height:420px!important}
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+<nav id="bbh-nav" class="sticky top-0 left-0 right-0 z-50 transition-all duration-500 bg-[#002e26]/95 backdrop-blur border-b border-[#c5a059]/20">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex justify-between items-center gap-4">
+    <a href="index.html" class="flex items-center gap-3 min-w-0">
+      <img src="assets/logo.webp" onerror="this.onerror=null;this.src='assets/logo.svg'" alt="Borderless Buying House logo (sample)" class="w-16 h-16 shrink-0 object-contain">
+      <span class="min-w-0">
+        <span class="block text-white font-extrabold tracking-tight text-base md:text-xl whitespace-nowrap">Borderless <span class="text-[#c5a059]">Buying House</span></span>
+        <span class="block text-[#c5a059]/90 text-[10px] md:text-xs font-semibold tracking-[0.18em] uppercase whitespace-nowrap">India Buying Office | Tiruppur, India</span>
+      </span>
+    </a>
+    <div class="hidden md:flex items-center space-x-7 font-semibold text-sm text-gray-200">
+      <a href="index.html" class="nav-link active hover:text-[#c5a059] transition">Home</a>
+      <a href="about.html" class="nav-link hover:text-[#c5a059] transition">About</a>
+      <a href="services.html" class="nav-link hover:text-[#c5a059] transition">Services</a>
+      <a href="enquiry.html" class="nav-link hover:text-[#c5a059] transition">Enquiry</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="enquiry.html" class="hidden sm:inline-block bg-[#c5a059] text-[#002e26] px-6 py-2.5 rounded-full text-sm font-bold hover:bg-white transition transform hover:scale-105 shadow-lg">For Enquiry</a>
+      <button id="menu-btn" class="md:hidden text-white text-2xl px-2" aria-label="Menu"><i id="menu-icon" class="fa-solid fa-bars-staggered"></i></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu md:hidden overflow-hidden max-h-0 transition-all duration-500 bg-[#002e26] border-t border-white/10">
+    <div class="px-6 py-4 flex flex-col gap-1 font-semibold text-gray-100">
+      <a href="index.html" class="mobile-link py-2.5 border-b border-white/5">Home</a>
+      <a href="about.html" class="mobile-link py-2.5 border-b border-white/5">About</a>
+      <a href="services.html" class="mobile-link py-2.5 border-b border-white/5">Services</a>
+      <a href="enquiry.html" class="mobile-link py-2.5">Enquiry</a>
+      <a href="enquiry.html" class="mobile-link mt-2 bg-[#c5a059] text-[#002e26] text-center px-6 py-3 rounded-full font-bold">For Enquiry</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO (image3 sample = garment factory) -->
+<header class="relative min-h-[92vh] flex items-center justify-center text-center text-white overflow-hidden">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1800')"></div>
+  <div class="absolute inset-0 hero-overlay"></div>
+  <div class="relative z-10 px-4 max-w-5xl mx-auto py-24">
+    <p class="motion text-[#c5a059] tracking-[0.35em] font-bold text-xs md:text-sm uppercase mb-4">Borderless Buying House · India Buying Office | Tiruppur, India</p>
+    <h1 class="motion motion-d1 text-4xl md:text-6xl font-extrabold leading-tight mb-5">YOUR TRUSTED <span class="italic font-light text-[#c5a059]">BUYING OFFICE</span> IN INDIA</h1>
+    <p class="motion motion-d2 max-w-3xl mx-auto text-base md:text-lg text-gray-200 mb-8">Your Local Buying Team in India for Reliable Garment Sourcing, Supplier Verification, Quality Control &amp; Production Management.</p>
+    <div class="motion motion-d3 flex flex-wrap justify-center gap-3 mb-10">
+      <span class="pill border border-white/40 px-5 py-2 rounded-full text-xs md:text-sm font-bold tracking-wide"><i class="fa-solid fa-inbox mr-2 text-[#c5a059]"></i>Receiving Enquiry</span>
+      <span class="pill border border-white/40 px-5 py-2 rounded-full text-xs md:text-sm font-bold tracking-wide"><i class="fa-solid fa-circle-check mr-2 text-[#c5a059]"></i>Vendor Verify</span>
+      <span class="pill border border-white/40 px-5 py-2 rounded-full text-xs md:text-sm font-bold tracking-wide"><i class="fa-solid fa-list-check mr-2 text-[#c5a059]"></i>Production Follow-up</span>
+      <span class="pill border border-white/40 px-5 py-2 rounded-full text-xs md:text-sm font-bold tracking-wide"><i class="fa-solid fa-magnifying-glass mr-2 text-[#c5a059]"></i>Quality Inspect</span>
+      <span class="pill border border-white/40 px-5 py-2 rounded-full text-xs md:text-sm font-bold tracking-wide"><i class="fa-solid fa-ship mr-2 text-[#c5a059]"></i>Shipment</span>
+    </div>
+    <div class="motion motion-d4 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="enquiry.html" class="bg-[#c5a059] text-[#002e26] px-10 py-4 rounded-md font-bold hover:bg-white transition-all shadow-xl hover:scale-105">For Enquiry</a>
+      <a href="services.html" class="border-2 border-white px-10 py-4 rounded-md font-bold hover:bg-white hover:text-[#004d40] transition-all">Our Services</a>
+    </div>
+  </div>
+  <a href="#whatwedo" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-[#c5a059] text-2xl animate-bounce"><i class="fa-solid fa-chevron-down"></i></a>
+</header>
+
+<!-- WHAT WE DO (slideshow image4-8 samples) -->
+<section id="whatwedo" class="relative py-24 px-6 overflow-hidden bg-[#002e26] text-white">
+  <div class="slideshow" id="slideshow-1">
+    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=1600" alt="Sample sourcing background 1 (replaces image4)">
+    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=1600" alt="Sample sourcing background 2 (replaces image5)">
+    <img src="https://images.unsplash.com/photo-1564859228273-274232fdb516?auto=format&fit=crop&q=80&w=1600" alt="Sample sourcing background 3 (replaces image6)">
+    <img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?auto=format&fit=crop&q=80&w=1600" alt="Sample sourcing background 4 (replaces image7)">
+    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7bdaf?auto=format&fit=crop&q=80&w=1600" alt="Sample sourcing background 5 (replaces image8)">
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-[#002e26] via-[#002e26]/70 to-[#002e26]"></div>
+  <div class="relative max-w-5xl mx-auto text-center">
+    <h3 class="motion text-[#c5a059] font-bold uppercase tracking-[0.4em] text-sm mb-4">What We Do</h3>
+    <h2 class="motion motion-d1 text-3xl md:text-5xl font-bold mb-8">WHAT WE DO</h2>
+    <div class="motion motion-d2 space-y-5 text-base md:text-lg text-gray-200 leading-relaxed">
+      <p>From understanding your product requirements to identifying the right suppliers, developing samples, finalizing costing, and coordinating order execution, we manage the sourcing process from India on your behalf.</p>
+      <p>With our strong network of garment manufacturers and exporters in Tiruppur and across India, we connect you with the right suppliers based on your product, quality, quantity, price, and delivery requirements.</p>
+      <p class="text-white font-semibold">Our goal is simple - to make sourcing from India easier, transparent, and reliable for international buyers.</p>
+    </div>
+    <div class="slide-dots mt-8 flex justify-center gap-2" data-dots="slideshow-1"></div>
+  </div>
+</section>
+
+<!-- CORE SERVICES (same slideshow) -->
+<section id="services" class="relative py-20 overflow-hidden bg-[#004d40] text-white">
+  <div class="slideshow" id="slideshow-2">
+    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=1600" alt="Sample services background 1 (replaces image4)">
+    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=1600" alt="Sample services background 2 (replaces image5)">
+    <img src="https://images.unsplash.com/photo-1564859228273-274232fdb516?auto=format&fit=crop&q=80&w=1600" alt="Sample services background 3 (replaces image6)">
+    <img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?auto=format&fit=crop&q=80&w=1600" alt="Sample services background 4 (replaces image7)">
+    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7bdaf?auto=format&fit=crop&q=80&w=1600" alt="Sample services background 5 (replaces image8)">
+  </div>
+  <div class="absolute inset-0 bg-[#004d40]/80"></div>
+  <div class="relative max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14 motion">
+      <h2 class="text-3xl font-bold">Our Core Services</h2>
+      <div class="w-20 h-1 bg-[#c5a059] mx-auto mt-4"></div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="motion service-card p-8 bg-white/95 text-gray-900 rounded-xl text-center shadow" data-aos="zoom-in"><i class="fa-solid fa-handshake text-[#c5a059] text-3xl mb-4"></i><h4 class="font-bold text-[#004d40]">Supplier Sourcing &amp; Selection</h4></div>
+      <div class="motion motion-d1 service-card p-8 bg-white/95 text-gray-900 rounded-xl text-center shadow" data-aos="zoom-in" data-aos-delay="100"><i class="fa-solid fa-pen-ruler text-[#c5a059] text-3xl mb-4"></i><h4 class="font-bold text-[#004d40]">Product &amp; Sample Development</h4></div>
+      <div class="motion motion-d2 service-card p-8 bg-white/95 text-gray-900 rounded-xl text-center shadow" data-aos="zoom-in" data-aos-delay="200"><i class="fa-solid fa-indian-rupee-sign text-[#c5a059] text-3xl mb-4"></i><h4 class="font-bold text-[#004d40]">Costing &amp; Price Negotiation</h4></div>
+      <div class="motion service-card p-8 bg-white/95 text-gray-900 rounded-xl text-center shadow" data-aos="zoom-in"><i class="fa-solid fa-certificate text-[#c5a059] text-3xl mb-4"></i><h4 class="font-bold text-[#004d40]">Quality &amp; Compliance Coordination</h4></div>
+      <div class="motion motion-d1 service-card p-8 bg-white/95 text-gray-900 rounded-xl text-center shadow" data-aos="zoom-in" data-aos-delay="100"><i class="fa-solid fa-clipboard-check text-[#c5a059] text-3xl mb-4"></i><h4 class="font-bold text-[#004d40]">Order Follow-up &amp; Production Monitoring</h4></div>
+      <div class="motion motion-d2 service-card p-8 bg-white/95 text-gray-900 rounded-xl text-center shadow" data-aos="zoom-in" data-aos-delay="200"><i class="fa-solid fa-file-lines text-[#c5a059] text-3xl mb-4"></i><h4 class="font-bold text-[#004d40]">Shipment &amp; Documentation Coordination</h4></div>
+    </div>
+    <div class="slide-dots mt-8 flex justify-center gap-2" data-dots="slideshow-2"></div>
+  </div>
+</section>
+
+<!-- WHY PARTNER -->
+<section class="py-24 bg-[#002e26] text-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+    <div data-aos="fade-right">
+      <h2 class="text-[#c5a059] font-bold uppercase tracking-widest mb-3 text-sm">Why Partner With Us</h2>
+      <h3 class="text-3xl md:text-4xl font-bold mb-4">Why Partner With Borderless Buying House</h3>
+      <p class="text-[#c5a059] font-bold tracking-[0.2em] text-xs md:text-sm mb-8">TRUST • TRANSPARENCY • DIRECT SOURCING • RELIABLE EXECUTION</p>
+      <ul class="space-y-6">
+        <li class="flex gap-4 motion"><i class="fa-solid fa-check-double text-[#c5a059] mt-1 text-xl"></i><div><h4 class="font-bold">10-12 YEARS INDUSTRY EXPERIENCE</h4><p class="text-gray-400 text-sm mt-1">Deep expertise in apparel sourcing, merchandising &amp; export execution.</p></div></li>
+        <li class="flex gap-4 motion motion-d1"><i class="fa-solid fa-check-double text-[#c5a059] mt-1 text-xl"></i><div><h4 class="font-bold">DIRECT MANUFACTURER NETWORK</h4><p class="text-gray-400 text-sm mt-1">Strong relationships with reliable manufacturers, factories &amp; suppliers across India.</p></div></li>
+        <li class="flex gap-4 motion motion-d2"><i class="fa-solid fa-check-double text-[#c5a059] mt-1 text-xl"></i><div><h4 class="font-bold">100% TRANSPARENT COMMUNICATION</h4><p class="text-gray-400 text-sm mt-1">Clear costing, genuine order handling, direct communication &amp; complete order visibility.</p></div></li>
+      </ul>
+    </div>
+    <div class="grid grid-cols-2 gap-5" data-aos="fade-left">
+      <div class="feature-img relative rounded-2xl overflow-hidden border border-white/10 min-h-[220px] md:min-h-[260px]">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=700" class="absolute inset-0 w-full h-full object-cover" alt="Sample feature 1 (replaces image10)">
+        <div class="absolute inset-0 bg-[#004d40]/70"></div>
+        <div class="relative p-6 flex flex-col items-center justify-center h-full text-center"><i class="fa-solid fa-user-tie text-4xl text-[#c5a059] mb-3"></i><div class="font-bold">Direct Sourcing</div></div>
+      </div>
+      <div class="feature-img relative rounded-2xl overflow-hidden border border-white/10 min-h-[220px] md:min-h-[260px]">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2959210?auto=format&fit=crop&q=80&w=700" class="absolute inset-0 w-full h-full object-cover" alt="Sample feature 2 (replaces image11)">
+        <div class="absolute inset-0 bg-[#004d40]/70"></div>
+        <div class="relative p-6 flex flex-col items-center justify-center h-full text-center"><i class="fa-solid fa-globe text-4xl text-[#c5a059] mb-3"></i><div class="font-bold">India Network</div></div>
+      </div>
+      <div class="feature-img relative rounded-2xl overflow-hidden border border-white/10 min-h-[220px] md:min-h-[260px]">
+        <img src="https://images.unsplash.com/photo-1454165833467-135248993621?auto=format&fit=crop&q=80&w=700" class="absolute inset-0 w-full h-full object-cover" alt="Sample feature 3 (replaces image12)">
+        <div class="absolute inset-0 bg-[#004d40]/70"></div>
+        <div class="relative p-6 flex flex-col items-center justify-center h-full text-center"><i class="fa-solid fa-file-contract text-4xl text-[#c5a059] mb-3"></i><div class="font-bold">Compliance</div></div>
+      </div>
+      <div class="feature-img relative rounded-2xl overflow-hidden border border-white/10 min-h-[220px] md:min-h-[260px]">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=700" class="absolute inset-0 w-full h-full object-cover" alt="Sample feature 4 (replaces image13)">
+        <div class="absolute inset-0 bg-[#004d40]/70"></div>
+        <div class="relative p-6 flex flex-col items-center justify-center h-full text-center"><i class="fa-solid fa-chart-line text-4xl text-[#c5a059] mb-3"></i><div class="font-bold">Growth Focused</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLOGAN (image15 sample) -->
+<section class="relative py-28 overflow-hidden text-center text-white">
+  <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=1800" class="absolute inset-0 w-full h-full object-cover" alt="Sample slogan banner (replaces image15)">
+  <div class="absolute inset-0 bg-[#002e26]/80"></div>
+  <div class="relative max-w-4xl mx-auto px-6" data-aos="zoom-in">
+    <p class="text-[#c5a059] tracking-[0.35em] text-xs font-bold mb-4">BORDERLESS BUYING HOUSE</p>
+    <h2 class="text-4xl md:text-6xl font-extrabold tracking-tight float-slow">YOUR VISION. <span class="text-[#c5a059]">OUR COLLECTIONS.</span></h2>
+    <a href="enquiry.html" class="inline-block mt-8 bg-[#c5a059] text-[#002e26] px-10 py-4 rounded-md font-bold hover:bg-white transition hover:scale-105">Start Sourcing</a>
+  </div>
+</section>
+
+<!-- marquee strip -->
+<div class="bg-[#c5a059] text-[#002e26] py-3 overflow-hidden font-bold text-sm tracking-widest">
+  <div class="flex gap-10 whitespace-nowrap animate-marquee w-max">
+    <span>SUPPLIER SOURCING ✦ SAMPLE DEVELOPMENT ✦ COSTING ✦ QUALITY CONTROL ✦ PRODUCTION FOLLOW-UP ✦ SHIPMENT ✦&nbsp;</span>
+    <span>SUPPLIER SOURCING ✦ SAMPLE DEVELOPMENT ✦ COSTING ✦ QUALITY CONTROL ✦ PRODUCTION FOLLOW-UP ✦ SHIPMENT ✦&nbsp;</span>
+  </div>
+</div>
+
+<footer class="bg-[#002e26] text-gray-300 pt-14 pb-7 mt-0">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+    <div data-aos="fade-up">
+      <div class="flex items-center gap-3 mb-4">
+        <img src="assets/logo.webp" onerror="this.onerror=null;this.src='assets/logo.svg'" alt="Borderless Buying House logo" class="w-14 h-14 object-contain">
+        <div class="text-white font-extrabold">Borderless <span class="text-[#c5a059]">Buying House</span></div>
+      </div>
+      <p class="text-sm text-gray-400 leading-relaxed">India Buying Office | Tiruppur, India. Reliable garment sourcing, supplier verification, quality control &amp; production management for international buyers.</p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+      <h4 class="text-white font-bold mb-4 text-sm tracking-widest uppercase">Quick Links</h4>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="index.html" class="hover:text-[#c5a059] transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#c5a059] transition">About</a></li>
+        <li><a href="services.html" class="hover:text-[#c5a059] transition">Services</a></li>
+        <li><a href="enquiry.html" class="hover:text-[#c5a059] transition">Enquiry</a></li>
+      </ul>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h4 class="text-white font-bold mb-4 text-sm tracking-widest uppercase">Contact</h4>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-2.5"><i class="fa-solid fa-location-dot text-[#c5a059] mt-1"></i><span>Duraisamy Nagar, Thirumurugan Poondi, Avinashi Road, Tiruppur-641652</span></li>
+        <li class="flex gap-2.5"><i class="fa-solid fa-envelope text-[#c5a059] mt-1"></i><a href="mailto:info@borderlessbuyinghouse.com" class="hover:text-[#c5a059] transition break-all">info@borderlessbuyinghouse.com</a></li>
+        <li class="flex gap-2.5"><i class="fa-solid fa-phone text-[#c5a059] mt-1"></i><a href="tel:+918903077183" class="hover:text-[#c5a059] transition">+91 890 30 771 83</a></li>
+      </ul>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300">
+      <h4 class="text-white font-bold mb-4 text-sm tracking-widest uppercase">Buying Office</h4>
+      <p class="text-sm text-gray-400 leading-relaxed">Receiving Enquiry · Vendor Verify · Production Follow-up · Quality Inspect · Shipment</p>
+      <a href="enquiry.html" class="inline-block mt-4 bg-[#c5a059] text-[#002e26] px-6 py-2.5 rounded-full text-sm font-bold hover:bg-white transition">For Enquiry</a>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between gap-2 text-xs text-gray-500">
+    <span>© 2026 Borderless Buying House · India Buying Office, Tiruppur, India. All rights reserved.</span>
+    <span>Trust · Transparency · Direct Sourcing · Reliable Execution</span>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/chatbot.js" defer></script>
+<script>
+// header/footer are inlined above — no fetch needed (works on file:// and http://)
+AOS.init({duration:800,once:true});
+(function(){
+const b=document.getElementById('menu-btn'),m=document.getElementById('mobile-menu'),i=document.getElementById('menu-icon');
+if(b){b.addEventListener('click',()=>{m.classList.toggle('open');const o=m.classList.contains('open');i.className=o?'fa-solid fa-xmark':'fa-solid fa-bars-staggered';});
+document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>{m.classList.remove('open');i.className='fa-solid fa-bars-staggered';}));}
+window.addEventListener('scroll',()=>{const n=document.getElementById('bbh-nav');if(n)n.classList.toggle('scrolled',scrollY>30);});
+})();
+// motion on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.motion').forEach(el=>io.observe(el));
+// slideshows
+[['slideshow-1',4500],['slideshow-2',5200]].forEach(([id,ms])=>{
+const box=document.getElementById(id);if(!box)return;const imgs=[...box.querySelectorAll('img')];let k=0;
+const dots=document.querySelector(`[data-dots="${id}"]`);
+const paint=()=>{imgs.forEach((im,j)=>im.classList.toggle('active',j===k));if(dots){dots.innerHTML=imgs.map((_,j)=>`<span class="${j===k?'on':''}"></span>`).join('');}};
+paint();setInterval(()=>{k=(k+1)%imgs.length;paint();},ms);});
+</script>
+</body>
+</html>
